@@ -2,4 +2,4 @@
 
 Autor's Kitchen link --> https://github.com/ilkckn/Autor-s-Kitchen.git
 
-Link to the Company Landing Page named Random --> https://github.com/ilkckn/LandingPage.git
+Link to the no name Company Landing Page --> https://github.com/ilkckn/LandingPage.git
