@@ -23,6 +23,9 @@ body {
       display: flex;
       flex-direction: column;
       width: 100%;
+      margin-bottom: 5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #000;
   
       .image-name {
         display: grid;
@@ -39,8 +42,8 @@ body {
   
           figure {
             img {
+              aspect-ratio: 1/1;
               width: 20rem;
-              height: 20rem;
               border-radius: 50%;
               border: 1px solid #000;
             }
