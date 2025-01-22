@@ -12,95 +12,125 @@
 body {
   width: 100%;
   height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(assets/images/sky.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 
-  .window {
-    width: 55rem;
-    height: 25rem;
-    border-top: 3px solid #f0f0f0;
-    border-left: 3px solid #f0f0f0;
-    border-bottom: 3px solid rgb(17, 17, 17);
-    border-right: 3px solid rgb(17, 17, 17);
-    border-radius: 7px;
-    display: grid;
-    grid-template-rows: 1fr 3fr;
+  main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 
-    .border {
+    #background {
+      position: absolute;
       width: 100%;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      padding: 0 2rem;
-      background: linear-gradient(90deg, rgb(14, 45, 184), rgb(188, 197, 241));
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.5);
 
-      h2 {
-        color: white;
-        text-transform: capitalize;
-        font-size: 1.8rem;
-        font-weight: 800;
-        letter-spacing: 1px;
+      figure {
+        width: 100%;
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
     }
 
-    .body-content {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 3rem;
-      background-color: rgb(182, 182, 182);
+    .window {
+      width: 55rem;
+      height: 25rem;
+      border-top: 3px solid #f0f0f0;
+      border-left: 3px solid #f0f0f0;
+      border-bottom: 3px solid rgb(17, 17, 17);
+      border-right: 3px solid rgb(17, 17, 17);
+      border-radius: 7px;
+      display: grid;
+      grid-template-rows: 1fr 3fr;
 
-      .img-text {
+      .border {
+        width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        gap: 1.5rem;
+        padding: 0 2rem;
+        background: linear-gradient(
+          90deg,
+          rgb(14, 45, 184),
+          rgb(188, 197, 241)
+        );
 
-        figure {
-          float: left;
-
-          img {
-            width: 5rem;
-            height: 5rem;
-            border-radius: 50%;
-          }
-        }
-
-        p {
-          font-size: 1.6rem;
-          color: rgb(17, 17, 17);
-          font-weight: 600;
-          letter-spacing: .4px;
+        h2 {
+          color: white;
+          text-transform: capitalize;
+          font-size: 1.8rem;
+          font-weight: 800;
+          letter-spacing: 1px;
         }
       }
 
-      .button {
+      .body-content {
         width: 100%;
         display: flex;
-        justify-content: flex-end;
-        padding: 2rem 0;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3rem;
+        background-color: rgb(182, 182, 182);
 
-        button {
-          background-color: rgb(182, 182, 182);
-          width: 10rem;
-          height: 4rem;
-          border-top: 3px solid #f0f0f0;
-          border-left: 3px solid #f0f0f0;
-          border-bottom: 3px solid rgb(17, 17, 17);
-          border-right: 3px solid rgb(17, 17, 17);
-          border-radius: 3px;
-          text-transform: capitalize;
-          font-family: "Poppins", sans-serif;
-          font-size: 1.6rem;
-          font-weight: 500;
-          letter-spacing: 1px;
-          cursor: pointer;
+        .img-text {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 1.5rem;
+
+          figure {
+            float: left;
+
+            img {
+              width: 5rem;
+              height: 5rem;
+              border-radius: 50%;
+            }
+          }
+
+          p {
+            font-size: 1.6rem;
+            color: rgb(17, 17, 17);
+            font-weight: 600;
+            letter-spacing: 0.4px;
+          }
+        }
+
+        .button {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          padding: 2rem 0;
+
+          button {
+            background-color: rgb(182, 182, 182);
+            width: 10rem;
+            height: 4rem;
+            border-top: 3px solid #f0f0f0;
+            border-left: 3px solid #f0f0f0;
+            border-bottom: 3px solid rgb(17, 17, 17);
+            border-right: 3px solid rgb(17, 17, 17);
+            border-radius: 3px;
+            text-transform: capitalize;
+            font-family: "Poppins", sans-serif;
+            font-size: 1.6rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            cursor: pointer;
+          }
         }
       }
     }
